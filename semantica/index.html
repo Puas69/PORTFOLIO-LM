@@ -1,11 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semantica</title>
+    <title>Introduccion a las Bases de Datos</title>
 </head>
 <body>
-    <p>Esta es mi carpeta sobre etiquetas semanticas</p>
+    <header id="Inicio">
+        <h1>Introduccion a las Bases de Datos</h1>
+        <nav>
+            <ul>
+                <li><a href="#Conceptos">Conceptos y Tipos</a></li>
+                <li><a href="#Estructuras">Estructura de Datos</a></li>
+                <li><a href="#Relaciones">Relaciones</a></li>
+                <li><a href="#Recursos">Recursos de Interes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 id="Conceptos">Conceptos y Tipos de Bases de Datos</h2>
+                <article>
+                    <h3>Bases de Datos Relacionales (RDBMS)</h3>
+                    <p>Las bases de datos relacionales organizan la información en tablas compuestas por filas (registros) y columnas (campos). Se basan en el modelo relacional y utilizan el lenguaje SQL para realizar consultas y gestionar los datos de manera estructurada. </p>
+                    <p>Ejemplos de sistemas gestores relacionales populares son MySQL, PostgreSQL y Oracle</p>
+                </article>
+                <article>
+                    <h3>Bases de Datos No Relacionales (NOSQL)</h3>
+                    <p>Las bases de datos NoSQL están diseñadas para gestionar grandes volúmenes de datos no estructurados  o semiestructurados. A diferencia de las relacionales, no requiren un esquema rígido y permiten escalabilidad horizontal.</p>
+                    <p>Existen distintos tipos segun el modelo de almacenamiento: orientadas a documentos, clave-valor, columnas o grafos. Un ejemplo representativo es Mongo DB </p>
+                </article>
+        </section>
+        <section>
+            <h2 id="Estructuras">Estructuras de una Base de Datos Relacional</h2>
+                <article>
+                    <ul>
+                        <li><b>Tablas (Entidades)</b>: Estructuras donde se organizan los datos.</li>
+                        <li><b>Campos (Atributos)</b>: Columnas que definen la tipología de información.</li>
+                        <li><b>Registros (Tuplas)</b>: Filas que contienen cada instancia concreta de datos.</li>
+                        <li><b>Claves primarias (Primary Keys)</b>: Identificadores únicos de cada registro</li>
+                    </ul>
+                </article>
+        </section>
+        <section>
+            <h2 id="Relaciones">Relaciones entre Tablas</h2>
+            <article>
+                <ul>
+                    <li><b>1:1 (Uno a Uno)</b>: Un registro de la Tabla A se relaciona con un único registro de la Tabla B, y viceversa. </li>
+                    <li><b>Relacion 1:N (Uno a Muchos)</b>:  Un registro de la Tabla A puede estar asociado con varios registros de la Tabla B, pero cada registro de la Tabla B pertenece a uno solo de la Tabla A. </li>
+                    <li><b>Relacion N:M (Muchos a Muchos)</b>: Varios registros de la Tabla A pueden relacionarse con varios registros de la Tabla B. </li>
+                    <li><b>Claves Foraneas</b>: es una columna o grupo de columnas en una tabla que apunta a la clave primaria de otra tabla para enlazar ambas y mantener la coherencia de los datos. </li>
+                </ul>
+            </article>
+        </section>
+        <aside>
+            <h2 id="Recursos">Recursos</h2>
+            <h3>Glosario de Terminos</h3>
+            <p><b>SQL</b>(Lenguaje de Consulta Estructurada): es un lenguaje de programación estandarizado que se usa para administrar, consultar y manipular bases de datos relacionales.</p>
+            <p><b>SGBD</b>: es un software que sirve como intermediario entre los usuarios, las aplicaciones y una base de datos para permitir el almacenamiento, la modificación y la recuperación de información de forma segura.</p>
+            <p><b>Normalización</b>: La normalización de bases de datos es el proceso de organizar y estructurar los datos en tablas para reducir la repetición y proteger la integridad de la información.</p>
+        </aside>
+        <aside>
+            <h3>Enlaces</h3>
+            <ul>
+                <li><a href="https://es.wikipedia.org/wiki/SQL">SQL</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_bases_de_datos">SGBD</a></li>
+                <li><a href="https://www.ibm.com/es-es/think/topics/database-normalization">Normalización</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>Alumno: Pedro José Pastor Mellado</p>
+        <p>Curso: 1º ASIR</p>
+        <p>Todos los Derechos de Autor los tengo</p>
+        <p><a href="#Inicio">Volver al Inicio</a></p>
+    </footer>
 </body>
 </html>
