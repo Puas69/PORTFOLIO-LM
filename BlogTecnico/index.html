@@ -6,7 +6,7 @@
     <title>TechOps & SysAdmin Blog</title>
 </head>
 <body>
-    <header>
+    <header id="inicio">
 
         <h1>TechOps & SysAdmin Blog</h1>
 
@@ -94,7 +94,7 @@
         </article>
         <article>
 
-            <h2 id="Noticia2">Docker</h2>
+            <h2 id="Noticia2">Nuevo Servicio Docker</h2>
 
             <time datetime="27/10/2026"></time>
 
@@ -102,15 +102,38 @@
 
                 <h3>Descripcion de Docker</h3>
 
+                <p>Docker es una plataforma de software que permite empaquetar, 
+                    distribuir y ejecutar aplicaciones dentro de contenedores 
+                    ligeros e independientes.</p>
+
+                <p>Qué es un contenedor?</p>
+
+                <p>Es un paquete ejecutable que incluye todo lo necesario para que una
+                     aplicación funcione: código, tiempo de ejecución (runtime), 
+                     bibliotecas y variables de entorno.</p>
+
+                <p>Funciona de manera aislada sobre el sistema operativo del servidor, 
+                    lo que consume menos recursos que una máquina virtual tradicional.</p>
+
             </section>
 
             <section>
 
-                <h3>Para que se usa</h3>
+                <h3>Para que se sirve</h3>
+
+                    <p>Portabilidad: Garantiza que la aplicación se comporte exactamente 
+                        igual en tu ordenador de desarrollo, en el servidor de pruebas 
+                        o en la nube.</p>
+
+                    <p>Rapidez: Los contenedores arrancan en segundos porque comparten 
+                        el núcleo (kernel) del sistema operativo.</p>
+
+                    <p>Aislamiento: Evita conflictos entre dependencias o versiones de 
+                        software de diferentes proyectos</p>
 
             </section>
 
-            <a href=""><img src="" alt=""></a>
+            <a href="https://www.docker.com/" target="_blank"><img src="img/docker-logo-mini-1.jpg" alt="Logo de Docker" height="300px"></a>
 
            <fieldset>
             <legend>Comentarios</legend>
@@ -132,19 +155,40 @@
         </article>
         <article>
 
-            <h2 id="Noticia3">Backups</h2>
+            <h2 id="Noticia3">Buena Practica Para Backups</h2>
 
             <time datetime="27/10/2026"></time>
 
             <section>
+                <h3>La Regla de Oro: La estrategia 3-2-1</h3>
+
+                <p>3 copias en total: Conserva tus datos originales y al menos dos copias adicionales.</p>
+
+                <p>2 soportes diferentes: Guarda las copias en dos tipos de medios distintos (por ejemplo, disco duro externo y la nube).</p>
+
+                <p>1 copia fuera de sitio: Almacena al menos una copia en una ubicación física o geográfica diferente 
+                    (como un servicio en la nube o en casa de un familiar) para evitar que un incendio o inundación destruya todo.</p>
 
             </section>
 
             <section>
 
+                <h3>Prácticas esenciales de gestión</h3>
+
+                <p>Automatiza las copias: Programa procesos automáticos para no depender de la memoria o del trabajo manual.</p>
+
+                <p>Define la frecuencia adecuada: Realiza respaldos diarios si tus datos cambian constantemente 
+                    (como bases de datos), o semanales/mensuales si la información es más estática.</p>
+
+                <p>Prueba las restauraciones: Comprueba de forma periódica que los archivos 
+                    se puedan recuperar; un backup que no se puede restaurar es inútil.</p>
+
+                <p>Utiliza copias inmutables o cifradas: Protege los respaldos contra el 
+                    ransomware (secuestro de datos) mediante tecnologías que impidan 
+                    modificar o borrar los archivos durante un tiempo determinado.</p>
             </section>
 
-            <a href=""><img src="" alt=""></a>
+            <a href="https://www.orsys.fr/orsys-lemag/es/10-buenas-practicas-para-las-copias-de-seguridad/" target="_blank"><img src="img/server.jpg" alt="Ordenador transfiriendo informacion" height="300px"></a>
 
            <fieldset>
             <legend>Comentarios</legend>
@@ -164,6 +208,26 @@
             </fieldset>
             
         </article>
+
     </main>
+
+    <aside>
+
+        <h2>Enlaces de interés</h2>
+
+        <ul>
+            <li><a href="https://www.incibe.es/sites/default/files/contenidos/guias/guia-copias-de-seguridad.pdf" target="_blank">Backups</a></li>
+            <li><a href="https://www.endeos.com/blog/cloud-8/consejos-para-hacer-copias-de-seguridad-en-la-nube-298" target="_blank">Backups</a></li>
+            <li><a href="https://www.redhat.com/es/topics/containers/what-is-docker" target="_blank">Docker</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Docker_(software)" target="_blank">Docker</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+
+        <p>Derechos de Autor Pedro ©</p>
+        <p><a href="#inicio">Volver</a></p>
+
+    </footer>
 </body>
 </html>
