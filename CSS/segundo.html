@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul.menu > li{
+            color: red;
+        }
+        h2 + p{
+            color: green;
+        }
+        input[type="text"]{
+            border: 3px solid red;
+        }
+        .parraforojo{
+            color: red;
+        }
+        .parrafoazul{
+            color: blue;
+        }
+        .parraforojo:hover{
+            font-weight: bold;
+        }
+        .parrafoazul:hover{
+            font-size: 30px;
+            background-image: url(img/willy.webp);
+            background-size: 10%;
+            background-repeat: no-repeat;
+        }
+        input:focus{
+            border: 5px red dashed;
+        }
+        tr:nth-child(odd){
+            color: rebeccapurple;
+        }
+        .parraforojo::first-letter{
+            font-size: 30px;
+            color: rgb(252, 101, 101);
+        }
+        .bloque{
+            width: 70%;
+            height: 70%;
+            border: 4px solid red;
+            border-radius: 10px;
+        }
+    </style>
+    <title>Segundo</title>
+</head>
+<body>
+    <h1>Segundo CSS</h1>
+
+    <ul class="menu">
+        <li>Primera Opcion</li>
+        <ul>
+            <li>Primera Subopcion</li>
+            <li>Segunda Subopcion</li>
+        </ul>
+        <li>Segunda Opcion</li>
+    </ul>
+    
+    <p>mi primer parrafo</p>
+
+    <h2>Esto es un encabezado de segundo nivel</h2>
+
+    <p>Mi segundo parrafo</p>
+
+    <p>Mi tercer parrafo</p>
+
+    <p class="parraforojo">Parrafo rojo</p>
+    <p class="parrafoazul">Parrafo azul</p>
+
+
+    <form action="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="aqui se escribe el nomnbre">
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" step="5">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <table>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+        </tr>
+        <tr>
+            <th>5</th>
+            <th>6</th>
+        </tr>
+        <tr>
+            <th>5</th>
+            <th>6</th>
+        </tr>
+        <tr>
+            <th>5</th>
+            <th>6</th>
+        </tr>
+    </table>
+
+    <div class="bloque">
+        Cualquier cosa
+        <img src="img/willy.webp" alt="" style="margin: 0px auto; display: block; width: 100%;">
+        <!--poner una imagen centrada pregunta de examen -->
+    </div>
+
+</body>
+</html>
