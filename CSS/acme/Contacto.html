@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Contacto</title>
+
+    <style>
+
+        li.menu { 
+            display: inline-block; 
+            width: 120px; 
+            height: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        a:hover{
+            background-color: red;
+        }
+        nav{
+            background-color: black;
+        }
+        h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li class="menu" ><a href="index.html">Inicio</a></li>
+                <li class="menu"><a href="Contacto.html">Contacto</a></li>
+                <li class="menu"><a href="Ubicacion.html">Ubicación</a></li>
+                <li class="menu"><a href="Equipo.html">Equipo</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Contacto</h1>
+
+        <form>
+        <fieldset>
+            <legend>Rellene las opciones siguientes para contactar</legend>
+                <label for="name">Nombre:</label><br>
+                <input type="text"><br>
+                <label for="name">Apellido:</label><br>
+                <input type="text"><br>
+                <label for="date">Elija una fecha:</label><br>
+                <input type="date" id="date"><br/><br>
+                <label for="fichero">Elija un fichero:</label><br>
+                <input type="file" id="fichero"><br/><br>
+        </fieldset>
+    </form>
+
+    </main>
+
+</body>
+</html>
