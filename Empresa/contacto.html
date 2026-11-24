@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frucimu</title>
+    <style>
+       li { 
+            display: inline-block; 
+            width: 220px; 
+            height: 70px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        a:hover{
+            background-color: red;
+        }
+        nav{
+            background-color: black;
+        }
+        img{
+            height: 500px;
+        }
+        footer{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="catalogo.html">Catalogo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Frucimu</h1>
+
+        <article>
+
+            <form>
+                <fieldset>
+                    <legend>Formulario de Contacto</legend>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" class="nombre" placeholder="Nombre"><br>
+                    <label for="Apellido">Apellido:</label><br>
+                    <input type="text" class="Apellido" placeholder="Apellido"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" class="email"><br>
+                    <label for="texto">Que necesitas?</label><br>
+                    <textarea name="texto" class="texto"></textarea><br>
+                    <label for="tema">Motivo de su contacto:</label><br>
+                    <select name="tema">
+                        <option value="Compra">Compra</option>
+                        <option value="Venta">Venta</option>
+                        <option value="Otro">Otro</option>
+                    </select><br><br>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar</button>
+                </fieldset>
+            </form>
+
+        </article>
+
+    </main>
+
+    <footer>
+
+        <p><a href="fecoam@fecoam.es">Correo</a></p>
+
+        <p><a href="tel:+34968351282">Teléfono</a></p>
+
+    </footer>
+</body>
+</html>
